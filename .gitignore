@@ -1,0 +1,12 @@
+node_modules/
+build/
+.react-router/
+.env
+.env.*
+!.env.example
+.vercel/
+.DS_Store
+.playwright-mcp/
+.e2e/*
+!.e2e/cache/
+.e2e-explore/

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+/* Self-hosted: Vite copies the font files into the build, so pages never load fonts from another server. */
+@import "@fontsource-variable/geist";
+
+/*
+ * Design tokens. To match a customer's brand, change these values; pages use
+ * the names (bg-primary, text-muted-foreground, border-border), never raw
+ * palette colors such as blue-600.
+ */
+@theme {
+  --font-sans:
+    "Geist Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --color-background: #ffffff;
+  --color-foreground: #0b2a38;
+  --color-muted: #f0f3f3;
+  --color-muted-foreground: #52707c;
+  --color-border: #d7dfe1;
+
+  --color-primary: #063b52;
+  --color-primary-foreground: #ffffff;
+
+  /* Sitewerk teal is too light for text on white (3.1:1); use it for marks, focus rings and highlights. */
+  --color-accent: #0ca3a5;
+  --color-accent-foreground: #063b52;
+
+  --color-success: #1f7a4d;
+  --color-warning: #a15c00;
+  --color-destructive: #b42318;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
