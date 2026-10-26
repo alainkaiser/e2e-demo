@@ -7,6 +7,7 @@ The app is React Router, Tailwind and Base UI, the same stack as `labs-sw-projec
 - `app/`: the Coffee Bar. The button label the live demo renames is `ADD_LABEL` in `app/data/menu.ts`.
 - `tests/menu.e2e.ts`: locator tests. No model, no API key.
 - `tests/order.e2e.ts`: an agent test. One goal, then an exact check.
+- `playwright/cappuccino.spec.ts`: the Playwright test from the slide. Run it with `npm run test:playwright`. The live demo does not.
 - `e2e.config.ts`: one web target. The runner starts `npm run dev` on port 4317.
 - `.github/workflows/e2e.yml`: runs the locator tests on every push and pull request. Agent tests run when the `AI_GATEWAY_API_KEY` secret is set.
 - `.github/workflows/deploy-vercel.yml`: the Sitewerk deploy workflow. It calls the private pipelines and stays skipped until `VERCEL_PROJECT_ID` is set.

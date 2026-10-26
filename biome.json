@@ -51,5 +51,13 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["playwright/cappuccino.spec.ts"],
+      "formatter": {
+        "enabled": false
+      }
+    }
+  ]
 }

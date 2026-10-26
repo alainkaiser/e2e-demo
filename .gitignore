@@ -10,3 +10,6 @@ build/
 .e2e/*
 !.e2e/cache/
 .e2e-explore/
+/test-results/
+/playwright-report/
+/blob-report/
