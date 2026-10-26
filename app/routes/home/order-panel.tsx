@@ -1,4 +1,4 @@
-import type { FormEvent } from 'react'
+import type { SubmitEvent } from 'react'
 import { Button } from '~/components/ui/button'
 import { money } from '~/lib/money'
 
@@ -30,7 +30,7 @@ export function OrderPanel({
   onApply,
   onPlace,
 }: OrderPanelProps) {
-  function apply(event: FormEvent<HTMLFormElement>) {
+  function apply(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault()
     const code = String(new FormData(event.currentTarget).get('code') ?? '')
     onApply(code)
