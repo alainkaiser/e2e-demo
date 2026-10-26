@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-26T16:12:43.852Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Add to order\" in \"Cappuccino\"",
+        "target": {
+          "role": "button",
+          "name": "Add to order",
+          "within": "Cappuccino"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Add one Cappuccino\" in \"Cappuccino\"",
+        "target": {
+          "role": "button",
+          "name": "Add one Cappuccino",
+          "text": "+",
+          "within": "Cappuccino"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/order.e2e.ts::a%20guest%20orders%20two%20cappuccinos%20with%20a%20promo%20code",
+      "targetId": "web",
+      "instructionDigest": "6730456a46ae5b8868fadd1967f5cbf361fa30813807c8e39d1df1237c055d83",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "chatgpt.responses",
+      "model": "gpt-6-luna"
+    },
+    "summary": "Added two cappuccinos to the order. The quantity is 2 and the total is CHF 9.60.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Cappuccino quantity",
+        "text": "2"
+      },
+      {
+        "role": "status",
+        "name": "Total",
+        "text": "CHF 9.60"
+      },
+      {
+        "role": "button",
+        "name": "Remove one Cappuccino",
+        "text": "−"
+      },
+      {
+        "role": "button",
+        "name": "Add one Cappuccino",
+        "text": "+"
+      },
+      {
+        "text": "CHF 9.60"
+      },
+      {
+        "role": "list",
+        "name": "Order items"
+      },
+      {
+        "role": "listitem",
+        "name": "Cappuccino Remove one Cappuccino Cappuccino quantity Add one Cappuccino CHF 9.60"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Total",
+        "text": "CHF 0.00"
+      },
+      {
+        "text": "Your order is empty."
+      }
+    ],
+    "endWaitMs": 12855,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "f7af480d2959b613c0f510bedb19c1bf8a50af99f517c8476a665d745497b44e",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "02e62a3bc215233a1b10ba486439ace3ca528988908794161ed9bcab562cba51",
+      "agentContextDigest": "c31ff410e637c6fb75e945dfcfaee712da2c4534619d7fd6857287a4d2b6943d"
+    }
+  }
+}
