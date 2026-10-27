@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-10-26T16:14:13.748Z",
+  "createdAt": "2026-10-27T09:58:05.264Z",
   "payload": {
     "actions": [
       {
@@ -29,7 +29,7 @@
       "provider": "chatgpt.responses",
       "model": "gpt-6-luna"
     },
-    "summary": "The order was placed and confirmed as order #3897 for 2 cappuccinos, with CHF 8.64 paid after the promo discount.",
+    "summary": "The order was placed successfully. Confirmation shows order #9854 for 2 × Cappuccino with total paid CHF 8.64.",
     "startPath": "/",
     "endPath": "/",
     "endAnchors": [
@@ -38,7 +38,7 @@
         "name": "Order confirmed"
       },
       {
-        "text": "Order number #3897"
+        "text": "Order number #9854"
       },
       {
         "role": "listitem",
@@ -90,7 +90,7 @@
         "text": "Cappuccino"
       }
     ],
-    "endWaitMs": 10099,
+    "endWaitMs": 10097,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",

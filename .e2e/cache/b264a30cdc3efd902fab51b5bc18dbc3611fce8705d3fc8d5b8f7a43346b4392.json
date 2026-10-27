@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-10-26T16:12:43.853Z",
+  "createdAt": "2026-10-27T09:51:51.220Z",
   "payload": {
     "actions": [
       {
@@ -39,7 +39,7 @@
       "provider": "chatgpt.responses",
       "model": "gpt-6-luna"
     },
-    "summary": "Applied promo code SITEWERK. The order shows a 10% discount and the total changed from CHF 9.60 to CHF 8.64.",
+    "summary": "Applied promo code SITEWERK. The order shows a 10% discount and the total updated to CHF 8.64.",
     "startPath": "/",
     "endPath": "/",
     "endAnchors": [
@@ -70,7 +70,7 @@
         "name": "Promo code"
       }
     ],
-    "endWaitMs": 12725,
+    "endWaitMs": 12206,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",
