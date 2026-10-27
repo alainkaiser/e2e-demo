@@ -19,5 +19,6 @@ test('a guest orders two cappuccinos with a promo code', async ({
 
   await agent.act('place the order')
   await expect(screen.getByRole('heading', 'Order confirmed')).toBeVisible()
+
   await agent.assert('the confirmation shows an order number')
 })
