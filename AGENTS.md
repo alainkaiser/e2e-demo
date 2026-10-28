@@ -1,16 +1,15 @@
 # AGENTS.md
 
-A Sitewerk Labs prototype: a clickable app that shows a customer an idea, created by the prototype factory. Whoever works here may have no coding background: talk in plain words, in their language, and run the commands yourself.
+Coffee Bar is a public starter for the Sitewerk talk "Agentic testing with e2e". Readers adapt their own clone or fork; the upstream repository is a read-only reference. Talk in plain words, in the user's language, and run the commands yourself.
 
 Read `BRIEF.md` first. It says who the prototype is for, what it shows and what is made up; update it when any of that changes.
 
-This checkout is the Coffee Bar talk demo, not a prototype the factory created. The page is `app/routes/home.tsx`. The live demo renames `ADD_LABEL` in `app/data/menu.ts`. End-to-end tests are in `tests/` and run with `npx e2e run`; `e2e.config.ts` starts the dev server on port 4317. Locator tests need no model. Agent tests use the ChatGPT login locally and Vercel AI Gateway when `CI` is set.
+The demo uses the Sitewerk prototype stack. The page is `app/routes/home.tsx`. The live demo renames `ADD_LABEL` in `app/data/menu.ts`. End-to-end tests are in `tests/` and run with `npx e2e run`; `e2e.config.ts` starts the dev server on port 4317. Locator tests need no model. Agent tests use each person's own ChatGPT login. Test output, including the replay cache, stays local and is ignored by Git.
 
 ## Commands
 
 - `npm install` once, then `npm run dev` as a background command. The prototype runs at http://127.0.0.1:4317.
 - `npm run check` lints, checks types and builds. Run it before you publish and fix what it reports. `npm run fix` formats and sorts classes.
-- Publishing, previews and links go through the `sitewerk` skill.
 
 ## Where things go
 
@@ -39,4 +38,3 @@ React 19, React Router 8 in framework mode rendering in the browser (`ssr: false
 - Every page works at phone width (375 px).
 - File names are kebab-case. Import app code with `~/`, for example `~/components/ui/button`.
 - After adding or renaming a route, run `npm run check`; it generates the `./+types/<route>` files that route imports.
-- `.github/workflows/`, `vercel.json` and the `VERCEL_*` settings deploy the prototype. Change them only when a Sitewerk engineer asks.

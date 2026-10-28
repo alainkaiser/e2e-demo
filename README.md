@@ -1,6 +1,8 @@
 # Coffee Bar
 
-A coffee ordering app on the Sitewerk prototype stack, with [e2e](https://e2e.tester.army/docs) tests. It is the live demo for the talk "Agentic testing with e2e".
+A coffee ordering app on the Sitewerk prototype stack, with [e2e](https://e2e.tester.army/docs) tests. It is the starter from the talk "Agentic testing with e2e".
+
+This repository is a read-only reference. Clone or fork it and make changes in your own repository. Contributions, pull requests, issue reports and support requests are not accepted. Set up your own CI and deployment if you need them.
 
 The app is React Router, Tailwind and Base UI, the same stack as `labs-sw-projects/prototype-template`. `AGENTS.md` says how that stack is put together. `BRIEF.md` says what this demo is for.
 
@@ -9,8 +11,6 @@ The app is React Router, Tailwind and Base UI, the same stack as `labs-sw-projec
 - `tests/order.e2e.ts`: an agent test. One goal, then an exact check.
 - `playwright/cappuccino.spec.ts`: the Playwright test from the slide. `npx playwright test --headed` shows the browser. The live demo does not run it.
 - `e2e.config.ts`: one web target. The runner starts `npm run dev` on port 4317.
-- `.github/workflows/e2e.yml`: runs the locator tests on every push and pull request. Agent tests run when the `AI_GATEWAY_API_KEY` secret is set.
-- `.github/workflows/deploy-vercel.yml`: the Sitewerk deploy workflow. It calls the private pipelines and stays skipped until `VERCEL_PROJECT_ID` is set.
 
 ## Run it
 
@@ -32,7 +32,9 @@ Agent steps on your machine use the ChatGPT login:
 npx e2e login openai
 ```
 
-The config then calls `chatgpt('gpt-6-luna')`. In GitHub Actions, where `CI` is set, it uses Vercel AI Gateway and `AI_GATEWAY_API_KEY` instead. The model needs tool calls and image input.
+Each person signs in with their own ChatGPT account. e2e stores the login in the user profile, outside this repository. The config uses `chatgpt('gpt-6-luna')`.
+
+Replay caches, reports, screenshots and other test output stay local and are ignored by Git.
 
 ## Things to try
 

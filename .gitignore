@@ -7,8 +7,7 @@ build/
 .vercel/
 .DS_Store
 .playwright-mcp/
-.e2e/*
-!.e2e/cache/
+.e2e/
 .e2e-explore/
 /test-results/
 /playwright-report/
